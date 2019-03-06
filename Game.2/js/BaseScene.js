@@ -17,6 +17,8 @@ class BaseScene extends Phaser.Scene {
       key: this.tileDataKey
     });
 
+    // this.player = new Player(this, 140, 1984);
+
     this.buildingTileset = this.map.addTilesetImage("BuildingTileset", "buildingTiles");
     this.officeTileset = this.map.addTilesetImage("Office_furniture_set", "officeTiles");
     this.backgroundLayer = this.map.createStaticLayer("Background", this.buildingTileset, 0, 0).setDepth(3);
@@ -29,10 +31,14 @@ class BaseScene extends Phaser.Scene {
     this.add.image(1200, 0, 'city', null).setOrigin(0, 0).setScale(10.2).setDepth(0);
     this.add.image(2200, 0, 'city', null).setOrigin(0, 0).setScale(10.2).setDepth(0);
     this.add.image(-200, 1175, 'cityClose', null).setOrigin(0, 0).setScale(4).setDepth(1);
-  }
+
+        this.scene.launch('UIScene');
+
+    // this.cameras.main.startFollow(this.player.sprite, false, 0.5, 0.5);
+
+}
+
 
   update(time, delta) {
 
-  }
-
-}
+    }

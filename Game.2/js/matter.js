@@ -22,8 +22,8 @@ class SpriteScene extends Phaser.Scene {
     this.matter.world.setBounds(0, 0, 3408, 1984);
     this.player = new Player(this, 140, 1984);
     this.createAnimations()
-    //cat 0x0016
-    //mask 0x0064
+    // //cat 0x0016
+    // //mask 0x0064
 
     var mouseSpring = this.matter.add.mouseSpring();
 

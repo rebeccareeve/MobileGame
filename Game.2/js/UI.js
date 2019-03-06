@@ -28,6 +28,5 @@ class UIScene extends Phaser.Scene {
       switch: new Button(this, 3230, 20, 'switchButton'),
     }
     console.log(this.buttons);
-    this.scene.launch('UIScene');
   }
 }
