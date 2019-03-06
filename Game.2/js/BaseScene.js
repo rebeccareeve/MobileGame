@@ -42,3 +42,4 @@ class BaseScene extends Phaser.Scene {
   update(time, delta) {
 
     }
+}
