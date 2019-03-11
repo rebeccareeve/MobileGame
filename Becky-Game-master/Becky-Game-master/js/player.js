@@ -11,8 +11,17 @@ class Player {
       .setBounce(0.01)
       .setMass(1)
       .setFriction(0.01);
+    this.movement = {
+      left: false,
+      right: false,
+      up: false,
+      switch: false
+    }
   }
-
+switch() {
+  console.log('switch called');
+  this.movement.switch = !this.movement.switch
+}
   update() {
 
   }
