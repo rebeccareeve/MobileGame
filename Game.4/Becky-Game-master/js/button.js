@@ -9,5 +9,4 @@ class Button {
       .setStatic(true)
       .setScrollFactor(0)
   }
-
 }

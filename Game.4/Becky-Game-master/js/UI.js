@@ -32,6 +32,5 @@ class UIScene extends Phaser.Scene {
     this.buttons.right.on('pointerup', function() {this.scene.manager.getScene('SpriteScene').player.movement.right = false}, this);
     this.buttons.jump.on('pointerup', function() {this.scene.manager.getScene('SpriteScene').player.movement.jump = false}, this);
     //this.buttons.switch.on('pointerup', function() {this.scene.manager.getScene('SpriteScene').player.movement.switch = false}, this);
-    console.log(this.buttons);
   }
 }
